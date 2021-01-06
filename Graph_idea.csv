@@ -1,0 +1,7 @@
+Word,Neighbors,degree
+in,"['from', 'the', 'since', 'where', 'and', 'at', 'following', 'of', 'on', 'until']",10
+the,"['of', 'its', 'in', 'this', 'which', 'a', 'part', 'entire', 'another', 'first']",10
+of,"['the', 'and', 'namely', 'comprises', 'includes', 'represents', 'within', 'comprising', 'whose', 's']",10
+minimum degree,10
+maximum degree,10
+Avarage degree,10.0

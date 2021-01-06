@@ -90,12 +90,11 @@ if __name__ == '__main__':
     print(w[0])
     print(len(w))
 
-    count_of_words = 3
+    count_of_words = 9
     d = get_connection(A[:count_of_words], words, A)
-    #d = get_connection(A, words, A)
-    for key in d.keys():
-        print("word: " + str(key) + ", words: " + str(d[key]))
-    print("done!")
+    # d = get_connection(A, words, A)
+    # for key in d.keys():
+    #     print("word: " + str(key) + ", words: " + str(d[key]))
     """"
     print("start")
     (A, words) = get_data("model.txt")
