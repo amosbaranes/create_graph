@@ -111,7 +111,7 @@ def stage_two(A, word_index, words, similarity):
 
     return tmp
 
-
+# ----
 """ make connection between all the words that have similarity between 0.7 to 0.8 """
 
 
