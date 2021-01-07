@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.preprocessing import normalize
 import random
 import matplotlib.pyplot as plt
-import matplotlib.mlab as mlab
+import matplotlib.mlab as mla
 import time
 from scipy.stats import norm
 import seaborn as sns
@@ -90,7 +90,7 @@ if __name__ == '__main__':
     print(w[0])
     print(len(w))
 
-    count_of_words = 9
+    count_of_words = 9000
     d = get_connection(A[:count_of_words], words, A)
     # d = get_connection(A, words, A)
     # for key in d.keys():

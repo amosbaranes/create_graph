@@ -1,5 +1,6 @@
 import numpy as np
 import csv
+
 """
 This code is the threshold we define for the word embedding.
 we also create a csv file called "graph_idea" which has 3 coloums
@@ -35,7 +36,7 @@ def list_avg(l):
     return (s / len(l))
 
 
-def create_dict(l1, l2, l3):
+def create_dict(l1, l2, l3, l4, l5):
     d = {}
     for i in range(len(l1)):
         d[l1[i][0]] = l1[i][1]
@@ -43,13 +44,17 @@ def create_dict(l1, l2, l3):
         d[l2[i][0]] = l2[i][1]
     for i in range(len(l3)):
         d[l3[i][0]] = l3[i][1]
+    for i in range(len(l4)):
+        d[l4[i][0]] = l4[i][1]
+    for i in range(len(l5)):
+        d[l5[i][0]] = l5[i][1]
     return d
 
 
 def check_lists(l, limit):
     l = sorted(l, key=lambda x: x[1], reverse=True)
     tmp = []
-    for i in range(limit):
+    for i in range(min(limit, len(l))):
         tmp.append(l[i])
     return tmp
 
@@ -62,21 +67,21 @@ def stage_one(A, word_index, words, similarity):
     for i in range(len(A)):
         if i != word_index:
             s = similarity[i]
-            if s >= 0.6:
+            if s >= 0.8:
                 d[words[i]] = s
 
     d = sort_dict(d)
     tmp = {}
-    count = 0
+    # count = 0
 
     # change the count of words you want in this boundry
-    limit = 18
+    # limit = 18
 
     for key in d.keys():
         tmp[key] = d[key]
-        count += 1
-        if count >= limit:
-            break
+        # count += 1
+        # if count >= limit:
+        #     break
     return tmp
 
 
@@ -88,21 +93,21 @@ def stage_two(A, word_index, words, similarity):
     for i in range(len(A)):
         if i != word_index:
             s = similarity[i]
-            if s < 0.6 and s >= 0.5:
+            if 0.8 > s >= 0.7:
                 d[words[i]] = s
 
     d = sort_dict(d)
     tmp = {}
-    count = 0
+    # count = 0
 
     # change the count of words you want in this boundry
-    limit = 10
+    # limit = 10
 
     for key in d.keys():
         tmp[key] = d[key]
-        count += 1
-        if count >= limit:
-            break
+        # count += 1
+        # if count >= limit:
+        #     break
 
     return tmp
 
@@ -115,46 +120,110 @@ def stage_three(A, word_index, words, similarity):
     for i in range(len(A)):
         if i != word_index:
             s = similarity[i]
-            if s < 0.5 and s >= 0.36:
+            if 0.7 > s >= 0.6:
                 d[words[i]] = s
 
     d = sort_dict(d)
     tmp = {}
     count = 0
     # change the count of words you want in this boundry
-    limit = 5
+    # limit = 5
 
     for key in d.keys():
         tmp[key] = d[key]
-        count += 1
-        if count >= limit:
-            break
+        # count += 1
+        # if count >= limit:
+        #     break
+
+    return tmp
+
+
+""" make connection between all the words that have similarity between 0.7 to 0.8 """
+
+
+def stage_four(A, word_index, words, similarity):
+    d = {}
+    for i in range(len(A)):
+        if i != word_index:
+            s = similarity[i]
+            if 0.6 > s >= 0.5:
+                d[words[i]] = s
+
+    d = sort_dict(d)
+    tmp = {}
+    count = 0
+    # change the count of words you want in this boundry
+    # limit = 5
+
+    for key in d.keys():
+        tmp[key] = d[key]
+        # count += 1
+        # if count >= limit:
+        #     break
+
+    return tmp
+
+
+""" make connection between all the words that have similarity between 0.7 to 0.8 """
+
+
+def stage_five(A, word_index, words, similarity):
+    d = {}
+    for i in range(len(A)):
+        if i != word_index:
+            s = similarity[i]
+            if 0.5 > s >= 0.36:
+                d[words[i]] = s
+
+    d = sort_dict(d)
+    tmp = {}
+    count = 0
+    # change the count of words you want in this boundry
+    # limit = 5
+
+    for key in d.keys():
+        tmp[key] = d[key]
+        # count += 1
+        # if count >= limit:
+        #     break
 
     return tmp
 
 
 def stages(A, word_index, words, similarity):
-    l1, l2, l3 = [], [], []
+    l1, l2, l3, l4, l5 = [], [], [], [], []
     d = {}
     for i in range(len(A)):
         if i != word_index:
-            if similarity[word_index][i] >= 0.6:
+            if similarity[word_index][i] >= 0.8:
                 l1.append([words[i], similarity[word_index][i]])
-            elif similarity[word_index][i] >= 0.5 and similarity[word_index][i] < 0.6:
+            elif 0.7 <= similarity[word_index][i] < 0.8:
                 l2.append([words[i], similarity[word_index][i]])
-            elif similarity[word_index][i] >= 0.36 and similarity[word_index][i] < 0.5:
+            elif 0.6 <= similarity[word_index][i] < 0.7:
                 l3.append([words[i], similarity[word_index][i]])
+            elif 0.5 <= similarity[word_index][i] < 0.6:
+                l4.append([words[i], similarity[word_index][i]])
+            elif 0.36 <= similarity[word_index][i] < 0.5:
+                l5.append([words[i], similarity[word_index][i]])
 
     l1 = check_lists(l1, 10)
     n1 = len(l1)
-    if n1 < 10:
-        l2 = check_lists(l2, 6)
+    if n1 < 15:
+        l2 = check_lists(l2, n1)
         n2 = len(l2)
-        if (n2 + n1) < 5:
-            l3 = check_lists(l3, 1)
-            d = create_dict(l1, l2, l3)
-        d = create_dict(l1, l2, [])
-    d = create_dict(l1, [], [])
+        if (n2 + n1) < 10:
+            l3 = check_lists(l3, n2)
+            n3 = len(l3)
+            if (n3 + n2 + n1) < 10:
+                l4 = check_lists(l3, n3)
+                n4 = len(l4)
+                if (n3 + n2 + n1 + n4) < 10:
+                    l5 = check_lists(l4, n4)
+                    d = create_dict(l1, l2, l3, l4, l5)
+                d = create_dict(l1, l2, l3, l4, [])
+            d = create_dict(l1, l2, l3, [], [])
+        d = create_dict(l1, l2, [], [], [])
+    d = create_dict(l1, [], [], [], [])
     return d
 
 

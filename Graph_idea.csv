@@ -1,7 +1,904 @@
 Word,Neighbors,degree
-in,"['from', 'the', 'since', 'where', 'and', 'at', 'following', 'of', 'on', 'until']",10
-the,"['of', 'its', 'in', 'this', 'which', 'a', 'part', 'entire', 'another', 'first']",10
-of,"['the', 'and', 'namely', 'comprises', 'includes', 'represents', 'within', 'comprising', 'whose', 's']",10
-minimum degree,10
+in,[],0
+the,['of'],1
+of,['the'],1
+a,"['another', 'an']",2
+category,[],0
+and,[],0
+is,[],0
+to,[],0
+was,[],0
+by,[],0
+for,[],0
+on,[],0
+as,['also'],1
+from,[],0
+at,[],0
+with,[],0
+s,[],0
+an,['a'],1
+it,[],0
+that,['actually'],1
+also,['as'],1
+which,[],0
+first,"['second', 'third', 'fourth']",3
+this,[],0
+he,['she'],1
+has,[],0
+one,['only'],1
+his,['her'],1
+after,"['before', 'shortly']",2
+who,['whom'],1
+are,[],0
+were,[],0
+two,"['three', 'four', 'six', 'five', 'eight', 'seven', 'twelve', 'eleven', 'nine', 'fourteen']",10
+its,[],0
+new,[],0
+be,[],0
+or,['either'],1
+had,['already'],1
+but,"['though', 'however', 'although', 'nevertheless', 'nonetheless', 'unfortunately', 'because', 'yet', 'even', 'so']",10
+born,[],0
+people,[],0
+their,[],0
+been,"['already', 'recently', 'previously']",3
+not,"['nor', 'neither', 'necessarily', 'yet', 'therefore', 'if', 'because', 'but', 'unless', 'so']",10
+all,[],0
+other,"['various', 'these', 'many', 'such', 'some']",5
+1,"['2', '3', '4', '5', '6', '7', '8', '9', '10', '11']",10
+during,[],0
+have,[],0
+may,[],0
+time,[],0
+year,[],0
+when,"['finally', 'again', 'suddenly', 'whereupon']",4
+they,[],0
+into,[],0
+united,['states'],1
+known,['regarded'],1
+american,[],0
+2,"['3', '4', '1', '5', '6', '7', '8', '9', '11', '10']",10
+where,[],0
+up,[],0
+years,"['months', 'days']",2
+there,[],0
+three,"['four', 'two', 'five', 'six', 'eight', 'seven', 'eleven', 'nine', 'twelve', 'fourteen']",10
+over,[],0
+only,['one'],1
+national,[],0
+later,"['afterwards', 'earlier', 'subsequently']",3
+part,[],0
+between,[],0
+more,"['than', 'less']",2
+most,[],0
+world,[],0
+3,"['4', '2', '5', '1', '6', '7', '8', '9', '11', '10']",10
+states,['united'],1
+made,[],0
+then,"['finally', 'eventually', 'afterwards', 'briefly']",4
+about,[],0
+under,[],0
+including,"['include', 'included']",2
+second,"['third', 'fourth', 'fifth', 'first', 'sixth', 'seventh', 'eighth', 'tenth', 'ninth', 'eleventh']",10
+out,['down'],1
+while,['whilst'],1
+some,"['many', 'these', 'other']",3
+well,[],0
+4,"['3', '5', '6', '7', '2', '8', '1', '9', '11', '10']",10
+before,"['after', 'prior', 'shortly']",3
+became,['becoming'],1
+state,[],0
+5,"['6', '4', '7', '3', '8', '9', '2', '1', '10', '11']",10
+being,['having'],1
+no,[],0
+century,"['19th', '20th', '18th', '17th', '16th', '21st']",6
+both,[],0
+south,"['north', 'west', 'east']",3
+city,[],0
+family,[],0
+until,[],0
+through,[],0
+since,[],0
+many,"['some', 'several', 'countless', 'numerous', 'these', 'other', 'various']",7
+university,"['faculty', 'alumni', 'college', 'polytechnic']",4
+following,['prior'],1
+such,"['include', 'other']",2
+based,[],0
+than,"['more', 'less']",2
+north,"['south', 'east', 'west', 'northeast', 'southeast', 'southwest', 'northwest', 'eastern', 'southern']",9
+used,"['utilized', 'utilised']",2
+name,[],0
+four,"['three', 'six', 'eight', 'five', 'two', 'seven', 'twelve', 'eleven', 'nine', 'fourteen']",10
+county,['counties'],1
+i,[],0
+several,"['numerous', 'many', 'dozens', 'various', 'countless']",5
+10,"['15', '12', '20', '11', '13', '14', '16', '30', '25', '8']",10
+school,['preparatory'],1
+would,"['will', 'could', 'might', 'did', 'should', 'expected', 'wished']",7
+former,[],0
+high,[],0
+6,"['7', '8', '5', '4', '9', '3', '2', '1', '11', '12']",10
+named,[],0
+these,"['some', 'other', 'many', 'various']",4
+however,"['but', 'although', 'nevertheless', 'though', 'nonetheless', 'because', 'unfortunately', 'consequently']",8
+called,['termed'],1
+march,"['april', 'february', 'december', 'november', 'october', 'september', 'july', 'june', 'january', 'august']",10
+early,"['late', 'mid']",2
+january,"['february', 'december', 'april', 'october', 'july', 'november', 'march', 'june', 'september', 'august']",10
+place,[],0
+established,[],0
+september,"['october', 'april', 'november', 'august', 'july', 'february', 'december', 'march', 'june', 'january']",10
+same,[],0
+can,"['cannot', 'could', 'must', 'might', 'should', 'will']",6
+june,"['july', 'april', 'december', 'february', 'october', 'november', 'september', 'march', 'august', 'january']",10
+october,"['september', 'november', 'february', 'april', 'december', 'march', 'july', 'june', 'january', 'august']",10
+work,[],0
+7,"['9', '8', '6', '5', '4', '3', '11', '13', '12', '1']",10
+july,"['june', 'april', 'august', 'february', 'september', 'october', 'december', 'march', 'january', 'november']",10
+them,[],0
+located,"['situated', 'adjoins', 'adjacent', 'abuts', 'occupies', 'near']",6
+april,"['october', 'march', 'february', 'december', 'september', 'july', 'november', 'june', 'january', 'august']",10
+now,['today'],1
+list,['lists'],1
+august,"['july', 'september', 'april', 'october', 'june', 'february', 'march', 'november', 'december', 'january']",10
+district,['districts'],1
+number,[],0
+member,[],0
+november,"['october', 'february', 'december', 'april', 'march', 'september', 'june', 'january', 'july', 'august']",10
+her,['his'],1
+area,[],0
+december,"['february', 'october', 'april', 'november', 'january', 'march', 'june', 'september', 'july', 'august']",10
+west,"['east', 'north', 'south', 'southwest', 'northeast', 'northwest']",6
+8,"['7', '9', '6', '5', '4', '11', '3', '12', '10', '13']",10
+group,[],0
+john,"['james', 'thomas', 'andrew', 'robert', 'hugh', 'richard', 'george', 'william', 'stephen', 'anthony']",10
+international,[],0
+12,"['11', '14', '16', '13', '10', '15', '8', '17', '9', '7']",10
+found,[],0
+him,['himself'],1
+played,['playing'],1
+end,[],0
+2010,"['2011', '2008', '2012', '2009', '2013', '2014', '2016', '2015', '2007', '2006']",10
+c,['f'],1
+against,[],0
+began,"['started', 'continued', 'resumed']",3
+she,['he'],1
+february,"['december', 'october', 'april', 'march', 'november', 'january', 'july', 'september', 'june', 'august']",10
+20,"['15', '30', '25', '10', '17', '14', '13', '22', '16', '19']",10
+war,[],0
+day,[],0
+held,[],0
+history,[],0
+so,"['even', 'because', 'always', 'obviously', 'but', 'anyway', 'indeed', 'if', 'too', 'actually']",10
+de,['la'],1
+2006,"['2010', '2007', '2005', '2008', '2004', '2011', '2009', '2002', '2003', '2001']",10
+members,[],0
+team,"['teams', 'championship']",2
+won,"['winning', 'winner', 'win', 'winners']",4
+long,['short'],1
+around,[],0
+series,[],0
+15,"['14', '20', '25', '13', '16', '30', '17', '10', '22', '11']",10
+best,[],0
+each,[],0
+9,"['7', '8', '6', '5', '4', '11', '13', '14', '3', '12']",10
+five,"['six', 'seven', 'eight', 'three', 'four', 'nine', 'eleven', 'fourteen', 'twelve', 'fifteen']",10
+home,[],0
+2011,"['2010', '2009', '2013', '2012', '2014', '2015', '2008', '2016', '2017', '2007']",10
+took,['taking'],1
+east,"['west', 'north', 'northeast', 'south', 'southwest', 'northwest', 'southeast', 'eastern']",8
+2008,"['2009', '2012', '2010', '2011', '2005', '2007', '2013', '2014', '2004', '2016']",10
+along,[],0
+another,['a'],1
+2007,"['2005', '2009', '2008', '2003', '2011', '2010', '2006', '2004', '2013', '2012']",10
+due,['owing'],1
+died,[],0
+d,[],0
+2009,"['2008', '2013', '2011', '2012', '2007', '2010', '2005', '2014', '2015', '2017']",10
+house,[],0
+released,['rereleased'],1
+back,[],0
+general,[],0
+within,[],0
+received,"['receiving', 'earned', 'garnered']",3
+like,[],0
+life,[],0
+english,[],0
+11,"['13', '14', '16', '12', '17', '15', '19', '23', '22', '10']",10
+left,[],0
+2012,"['2014', '2016', '2013', '2008', '2015', '2009', '2011', '2010', '2017', '2018']",10
+public,[],0
+last,['next'],1
+third,"['fourth', 'second', 'fifth', 'sixth', 'seventh', 'eighth', 'tenth', 'ninth', 'first', 'eleventh']",10
+described,[],0
+served,['serving'],1
+include,"['including', 'such']",2
+use,"['utilize', 'utilise']",2
+british,[],0
+small,"['large', 'tiny', 'smaller']",3
+30,"['25', '20', '15', '22', '24', '10', '26', '14', '28', '27']",10
+company,['corp'],1
+set,[],0
+will,"['would', 'must', 'could', 'cannot', 'should', 'can', 'might']",7
+old,[],0
+major,[],0
+college,['university'],1
+because,"['indeed', 'even', 'so', 'though', 'but', 'however', 'nevertheless', 'nonetheless', 'obviously', 'although']",10
+2013,"['2014', '2015', '2017', '2012', '2009', '2018', '2016', '2011', '2019', '2008']",10
+18,"['14', '17', '19', '16', '21', '13', '15', '23', '22', '11']",10
+any,[],0
+16,"['14', '13', '17', '15', '11', '19', '12', '22', '23', '21']",10
+local,[],0
+14,"['13', '16', '17', '11', '15', '19', '22', '23', '12', '26']",10
+2014,"['2015', '2013', '2012', '2018', '2016', '2017', '2019', '2011', '2009', '2008']",10
+did,"['didn', 'would', 'does', 'chose', 'wanted']",5
+main,[],0
+included,['including'],1
+000,"['700', '500', '600', '300', '250', '800', 'million', '400', '150', '200']",10
+york,[],0
+13,"['14', '11', '16', '17', '15', '22', '19', '23', '12', '26']",10
+central,"['eastern', 'western', 'southern']",3
+2005,"['2003', '2007', '2004', '2009', '2008', '2002', '2001', '2006', '2010', '2011']",10
+2015,"['2017', '2014', '2013', '2018', '2016', '2019', '2012', '2011', '2009', '2010']",10
+25,"['30', '15', '20', '22', '26', '24', '28', '27', '23', '31']",10
+times,[],0
+government,['governments'],1
+although,"['though', 'however', 'but', 'nevertheless', 'nonetheless', 'because', 'yet', 'indeed', 'still', 'even']",10
+t,"['wouldn', 'didn', 'couldn']",3
+e,['g'],1
+own,[],0
+still,"['though', 'although']",2
+order,[],0
+large,['small'],1
+season,['seasons'],1
+film,"['movie', 'screenplay']",2
+built,"['constructed', 'rebuilt']",2
+near,"['vicinity', 'nearby', 'overlooking', 'outskirts', 'located', 'situated']",6
+off,[],0
+17,"['19', '14', '13', '23', '22', '16', '21', '26', '27', '15']",10
+places,['populated'],1
+2004,"['2003', '2002', '2005', '2008', '2001', '1998', '2000', '1996', '2007', '1999']",10
+single,[],0
+late,"['early', 'mid']",2
+2016,"['2018', '2014', '2012', '2015', '2017', '2013', '2019', '2011', '2008', '2010']",10
+music,[],0
+village,['town'],1
+published,"['republished', 'reprinted', 'edited']",3
+death,[],0
+u,[],0
+among,['amongst'],1
+m,[],0
+very,"['quite', 'extremely', 'fairly', 'remarkably', 'exceedingly', 'incredibly', 'comparatively', 'relatively', 'too', 'unusually']",10
+according,[],0
+moved,"['relocated', 'returned', 'relocating']",3
+players,[],0
+age,[],0
+six,"['five', 'eight', 'four', 'seven', 'three', 'nine', 'eleven', 'fourteen', 'twelve', 'two']",10
+2000,"['2004', '2002', '2001', '1998', '1996', '2003', '1999', '1997', '2005', '1994']",10
+town,['village'],1
+great,[],0
+could,"['might', 'should', 'cannot', 'would', 'can', 'must', 'will']",7
+those,[],0
+if,"['unless', 'whenever', 'cannot', 'not', 'so', 'always', 'therefore', 'should']",8
+just,[],0
+final,['penultimate'],1
+original,[],0
+created,[],0
+24,"['26', '22', '28', '27', '25', '23', '29', '13', '31', '15']",10
+down,['out'],1
+association,[],0
+country,[],0
+football,"['soccer', 'basketball']",2
+population,[],0
+b,['r'],1
+top,[],0
+children,[],0
+19,"['17', '23', '22', '14', '21', '13', '27', '26', '16', '28']",10
+ii,"['iii', 'iv', 'vi']",3
+what,"['why', 'really', 'honestly', 'definitely', 'something', 'nothing']",6
+league,['leagues'],1
+service,[],0
+club,[],0
+having,['being'],1
+again,"['finally', 'when', 'once']",3
+led,[],0
+way,[],0
+produced,[],0
+21,"['23', '19', '17', '22', '27', '28', '26', '29', '14', '13']",10
+non,[],0
+career,[],0
+much,[],0
+various,"['other', 'multitude', 'numerous', 'several', 'plethora', 'many', 'myriad', 'these']",8
+line,['lines'],1
+son,"['nephew', 'cousin', 'eldest', 'grandson', 'brother', 'father', 'daughter', 'stepson', 'uncle', 'grandfather']",10
+2017,"['2015', '2018', '2019', '2013', '2014', '2016', '2012', '2009', '2011', '2020']",10
+system,['systems'],1
+women,[],0
+started,"['began', 'resumed']",2
+2003,"['2005', '2002', '2001', '2004', '1998', '1999', '1997', '2007', '1995', '1996']",10
+side,['sides'],1
+men,[],0
+living,[],0
+given,[],0
+different,['differing'],1
+make,['give'],1
+written,['penned'],1
+become,['becoming'],1
+form,[],0
+22,"['26', '28', '27', '23', '29', '31', '17', '19', '13', '14']",10
+went,"['returned', 'came', 'proceeded']",3
+2002,"['2001', '2003', '2004', '1998', '2005', '1999', '1997', '2000', '1996', '2007']",10
+co,[],0
+president,"['vice', 'presidency']",2
+came,"['brought', 'went']",2
+next,['last'],1
+white,['black'],1
+2001,"['2002', '2003', '1999', '2005', '1998', '2004', '2000', '1997', '2007', '1996']",10
+official,['website'],1
+st,['saint'],1
+23,"['22', '28', '27', '26', '19', '29', '17', '21', '31', '13']",10
+founded,['founds'],1
+married,"['remarried', 'wed', 'widowed', 'divorced', 'eloped']",5
+2018,"['2017', '2019', '2015', '2016', '2014', '2013', '2012', '2020', '2011', '2009']",10
+father,"['stepfather', 'grandfather', 'uncle', 'son', 'mother', 'brother', 'nephew', 'cousin', 'stepson', 'grandmother']",10
+western,"['eastern', 'southern', 'northern', 'southwestern', 'central']",5
+together,[],0
+worked,[],0
+often,"['sometimes', 'frequently', 'usually', 'occasionally', 'rarely', 'invariably', 'seldom', 'oftentimes', 'typically', 'infrequently']",10
+even,"['though', 'so', 'because', 'indeed', 'obviously', 'but', 'nonetheless', 'seldom', 'nevertheless', 'always']",10
+joined,"['rejoined', 'joining']",2
+center,[],0
+full,[],0
+book,"['essay', 'autobiography']",2
+short,['long'],1
+total,[],0
+do,[],0
+head,[],0
+few,['handful'],1
+summer,['winter'],1
+director,['consultant'],1
+region,['regions'],1
+development,['developing'],1
+show,[],0
+england,[],0
+community,[],0
+period,['periods'],1
+take,['taking'],1
+player,[],0
+without,[],0
+man,[],0
+28,"['27', '26', '29', '22', '23', '31', '17', '19', '21', '24']",10
+26,"['27', '28', '29', '22', '23', '31', '17', '19', '24', '13']",10
+london,[],0
+play,[],0
+title,['titles'],1
+professional,[],0
+young,[],0
+originally,[],0
+using,"['utilizing', 'uses']",2
+french,[],0
+27,"['28', '26', '29', '22', '23', '31', '17', '19', '21', '24']",10
+works,[],0
+building,[],0
+present,[],0
+office,[],0
+currently,[],0
+award,"['awards', 'awardee']",2
+making,[],0
+1999,"['1998', '1997', '2003', '2001', '1995', '2002', '1996', '1994', '2004', '1993']",10
+party,"['democratic', 'socialist']",2
+television,['tv'],1
+said,"['stated', 'told', 'remarked', 'commented', 'saying', 'replied', 'joked', 'opined', 'stating', 'says']",10
+point,[],0
+river,"['headwaters', 'confluence', 'tributary', 'estuary', 'basin', 'gorge', 'watershed', 'empties', 'tributaries', 'lake']",10
+games,[],0
+america,[],0
+100,"['200', '50', '40', '150', '60', '120', '110', '80', '500', '400']",10
+record,[],0
+department,[],0
+returned,"['returning', 'moved', 'went', 'rejoined']",4
+20th,"['21st', '19th', 'century', '18th', '17th', 'twentieth', '16th']",7
+establishments,['disestablishments'],1
+completed,[],0
+role,['roles'],1
+species,"['genus', 'genera', 'subspecies', 'monotypic', 'maculata', 'subgenus', 'invertebrates', 'subfamily', 'crustacean', 'euphorbiaceae']",10
+us,[],0
+black,['white'],1
+site,[],0
+further,[],0
+once,['again'],1
+right,[],0
+1998,"['1997', '1996', '1995', '1999', '1994', '2003', '2002', '1993', '2001', '2004']",10
+william,"['henry', 'edward', 'robert', 'edmund', 'james', 'charles', 'thomas', 'hugh', 'john', 'richard']",10
+see,[],0
+level,[],0
+working,[],0
+land,['lands'],1
+days,"['months', 'weeks', 'hours', 'years']",4
+29,"['27', '26', '28', '22', '31', '23', '19', '17', '21', '24']",10
+continued,"['began', 'resumed']",2
+considered,"['regarded', 'deemed']",2
+northern,"['southern', 'eastern', 'western', 'northeastern', 'southwestern', 'southeastern', 'northwestern']",7
+lost,['losing'],1
+2019,"['2018', '2017', '2015', '2016', '2014', '2013', '2020', '2012', '2011', '2009']",10
+j,"['w', 'h', 'r', 'p', 'g']",5
+support,[],0
+german,"['austrian', 'hungarian']",2
+others,[],0
+road,[],0
+southern,"['northern', 'eastern', 'southwestern', 'western', 'southeastern', 'northeastern', 'northwestern', 'north', 'central']",9
+james,"['john', 'thomas', 'andrew', 'robert', 'william', 'george', 'hugh', 'stuart', 'timothy', 'richard']",10
+every,[],0
+though,"['although', 'but', 'however', 'nonetheless', 'even', 'nevertheless', 'because', 'yet', 'indeed', 'still']",10
+field,[],0
+open,[],0
+division,[],0
+post,[],0
+1996,"['1994', '1998', '1992', '1997', '1995', '1993', '1990', '1999', '1988', '2004']",10
+law,[],0
+george,"['james', 'john', 'william', 'charles', 'edward', 'andrew', 'thomas', 'henry', 'robert', 'richard']",10
+events,[],0
+album,"['ep', 'compilation', 'albums', 'song']",4
+society,[],0
+1997,"['1995', '1998', '1994', '1993', '1996', '1999', '2003', '1990', '1989', '1992']",10
+re,[],0
+half,[],0
+buildings,"['houses', 'structures']",2
+addition,['additionally'],1
+position,['positions'],1
+special,[],0
+france,['belgium'],1
+council,['councils'],1
+province,['provinces'],1
+live,[],0
+similar,"['unusual', 'typical']",2
+run,[],0
+park,[],0
+alumni,"['faculty', 'university']",2
+story,[],0
+seven,"['nine', 'five', 'six', 'eight', 'three', 'eleven', 'four', 'fourteen', 'twelve', 'thirteen']",10
+military,[],0
+station,['stations'],1
+0,"['3', '2', '1']",3
+free,[],0
+birth,[],0
+male,['female'],1
+business,[],0
+formed,[],0
+little,[],0
+wife,"['daughter', 'niece', 'widow', 'husband', 'stepdaughter', 'mother', 'stepmother', 'widowed', 'cousin', 'aunt']",10
+upon,[],0
+opened,"['reopened', 'closed']",2
+political,[],0
+1995,"['1997', '1993', '1994', '1998', '1996', '1990', '1989', '1987', '1999', '1992']",10
+david,"['jonathan', 'alan', 'michael', 'eric', 'steven', 'robert', 'brian', 'stephen', 'keith', 'jeffrey']",10
+includes,"['comprises', 'contains', 'consists']",3
+church,"['cathedral', 'churches', 'episcopal', 'chapel', 'congregational', 'baptist']",6
+union,[],0
+power,[],0
+throughout,[],0
+water,[],0
+never,"['hadn', 'actually', 'already', 'yet', 'anyway']",5
+developed,[],0
+education,['vocational'],1
+class,[],0
+important,['crucial'],1
+1994,"['1995', '1993', '1996', '1997', '1990', '1992', '1998', '1989', '1986', '1987']",10
+good,[],0
+result,['consequence'],1
+game,[],0
+announced,[],0
+wrote,"['writes', 'remarked', 'commented', 'penned']",4
+current,[],0
+you,"['me', 'somebody', 'myself', 'gotta', 'we', 'yourself', 'everybody', 'wanna', 'gonna', 'nobody']",10
+1992,"['1994', '1996', '1988', '1990', '1993', '1984', '1989', '1995', '1986', '1987']",10
+l,[],0
+king,[],0
+f,['c'],1
+art,[],0
+kingdom,[],0
+across,[],0
+recorded,[],0
+popular,[],0
+31,"['27', '28', '26', '29', '22', '23', '17', '19', '24', '25']",10
+research,"['biomedical', 'researches']",2
+red,"['blue', 'yellow']",2
+modern,[],0
+eastern,"['southern', 'western', 'northern', 'southwestern', 'southeastern', 'northeastern', 'central', 'east', 'north', 'northwestern']",10
+lead,[],0
+taken,[],0
+song,"['songs', 'ballad', 'album']",3
+royal,[],0
+european,[],0
+how,"['why', 'really']",2
+50,"['40', '60', '70', '35', '80', '120', '75', '150', '100', '125']",10
+directed,['starring'],1
+language,['languages'],1
+production,[],0
+r,"['j', 'b', 'h', 'k']",4
+1993,"['1995', '1994', '1997', '1989', '1990', '1987', '1986', '1992', '1985', '1996']",10
+common,[],0
+press,[],0
+appeared,"['appearing', 'featured']",2
+project,[],0
+street,['avenue'],1
+robert,"['richard', 'john', 'james', 'william', 'hugh', 'thomas', 'david', 'walter', 'ralph', 'gerald']",10
+playing,"['played', 'plays']",2
+la,"['de', 'sur', 'tres', 'del', 'entre', 'en']",6
+areas,[],0
+1990,"['1989', '1986', '1987', '1993', '1994', '1985', '1983', '1982', '1992', '1995']",10
+eventually,"['finally', 'soon', 'quickly', 'ultimately', 'afterward', 'swiftly', 'then', 'afterwards', 'promptly', 'subsequently']",10
+away,[],0
+records,[],0
+followed,['preceded'],1
+debut,['début'],1
+germany,[],0
+eight,"['six', 'five', 'four', 'seven', 'eleven', 'nine', 'three', 'fourteen', 'twelve', 'sixteen']",10
+1991,"['1990', '1993', '1989', '1988', '1987', '1994', '1986', '1995', '1985', '1992']",10
+leading,[],0
+army,"['corps', 'cavalry', 'forces']",3
+g,"['e', 'w', 'h', 'j']",4
+board,[],0
+australia,"['tasmania', 'queensland']",2
+version,['versions'],1
+california,"['monterey', 'oxnard', 'fresno', 'tulare', 'alameda']",5
+style,[],0
+appointed,"['reappointed', 'deputy']",2
+band,[],0
+europe,[],0
+per,[],0
+despite,['spite'],1
+p,"['n', 'j']",2
+air,['force'],1
+missing,[],0
+million,"['3million', '5million', 'billion', '6million', '2million', '8million', '7million', '9million', '4million', '1million']",10
+program,['programs'],1
+social,[],0
+elected,"['reelected', 'elect']",2
+months,"['days', 'weeks', 'years', 'month']",4
+films,[],0
+event,[],0
+previously,"['recently', 'been']",2
+available,[],0
+control,[],0
+himself,['him'],1
+refer,[],0
+close,[],0
+related,[],0
+less,"['more', 'than', 'rather']",3
+middle,[],0
+canada,['ontario'],1
+website,"['homepage', 'webpage', 'official', 'www']",4
+remained,[],0
+seen,['shown'],1
+hall,[],0
+instead,[],0
+information,[],0
+go,"['get', 'come', 'going']",3
+gave,['giving'],1
+1989,"['1987', '1990', '1986', '1985', '1993', '1983', '1982', '1981', '1979', '1994']",10
+services,[],0
+island,['islands'],1
+chief,['deputy'],1
+paul,"['peter', 'martin', 'michael', 'bernard', 'john', 'joseph', 'andrew', 'patrick', 'anthony', 'adrian']",10
+sports,['sport'],1
+involved,[],0
+1988,"['1984', '1992', '1980', '1986', '1987', '1990', '1985', '1989', '1982', '1983']",10
+features,[],0
+ten,"['five', 'eight', 'fifteen', 'seven', 'nine', 'eleven', 'six', 'fourteen', 'twelve', 'sixteen']",10
+help,['helps'],1
+daughter,"['niece', 'wife', 'granddaughter', 'son', 'cousin', 'eldest', 'stepdaughter', 'widow', 'stepson', 'mother']",10
+40,"['50', '35', '60', '70', '36', '45', '42', '80', '55', '48']",10
+designed,[],0
+o,"['neill', 'brien', 'malley', 'donnell', 'connor', 'meara', 'rourke', 'reilly']",8
+mother,"['grandmother', 'aunt', 'father', 'stepmother', 'wife', 'daughter', 'stepfather', 'stepdaughter', 'niece', 'fiancée']",10
+court,"['courts', 'appeals', 'judge', 'supreme']",4
+term,[],0
+rock,[],0
+fourth,"['fifth', 'third', 'sixth', 'seventh', 'eighth', 'second', 'tenth', 'ninth', 'eleventh', 'thirteenth']",10
+charles,"['henry', 'william', 'edward', 'philip', 'ernest', 'francis', 'frederick', 'george', 'robert', 'bernard']",10
+science,[],0
+today,['now'],1
+private,[],0
+return,[],0
+video,[],0
+listed,[],0
+love,['dreams'],1
+female,['male'],1
+does,"['doesn', 'did']",2
+groups,[],0
+signed,['signing'],1
+either,"['normally', 'or']",2
+thomas,"['john', 'james', 'william', 'robert', 'richard', 'anthony', 'andrew', 'edmund', 'francis', 'nathaniel']",10
+independent,[],0
+case,[],0
+books,['anthologies'],1
+added,[],0
+awarded,['recipient'],1
+previous,[],0
+populated,['places'],1
+sold,"['bought', 'purchased', 'resold']",3
+san,"['diego', 'francisco', 'mateo', 'jose', 'bernardino', 'obispo']",6
+radio,"['broadcasts', 'broadcasting']",2
+institute,[],0
+night,[],0
+whose,[],0
+beginning,[],0
+brother,"['nephew', 'uncle', 'son', 'cousin', 'stepson', 'father', 'elder', 'stepbrother', 'uncles', 'grandfather']",10
+above,['below'],1
+almost,"['nearly', 'virtually', 'practically']",3
+round,[],0
+1987,"['1986', '1985', '1983', '1989', '1982', '1981', '1990', '1978', '1979', '1993']",10
+example,"['instance', 'examples']",2
+michael,"['peter', 'andrew', 'david', 'anthony', 'patrick', 'brian', 'stephen', 'steven', 'john', 'kevin']",10
+get,"['getting', 'go', 'bring']",3
+largest,[],0
+h,"['w', 'j', 'g', 'r']",4
+mid,"['late', 'early']",2
+act,[],0
+arts,[],0
+force,"['forces', 'air']",2
+release,"['releases', 'releasing']",2
+track,[],0
+india,"['nepal', 'assam', 'orissa', 'gujarat', 'sikkim', 'odisha', 'bihar', 'pradesh']",8
+prior,"['before', 'following']",2
+1986,"['1987', '1985', '1982', '1989', '1983', '1981', '1990', '1978', '1979', '1984']",10
+featured,"['featuring', 'appeared']",2
+body,[],0
+attended,"['attending', 'graduated', 'enrolled']",3
+centre,[],0
+1984,"['1980', '1988', '1976', '1982', '1983', '1986', '1985', '1972', '1978', '1979']",10
+soon,"['eventually', 'afterwards', 'afterward', 'quickly', 'thereafter', 'finally', 'meantime', 'immediately', 'shortly']",9
+outside,[],0
+design,[],0
+thus,"['therefore', 'consequently', 'thereby', 'hence', 'effectively']",5
+range,[],0
+civil,[],0
+construction,[],0
+approximately,"['roughly', 'approx']",2
+should,"['must', 'cannot', 'could', 'might', 'ought', 'can', 'will', 'would', 'shall', 'if']",10
+able,"['unable', 'allowed', 'willing', 'hoping']",4
+1985,"['1986', '1987', '1983', '1982', '1981', '1989', '1978', '1990', '1979', '1977']",10
+provided,"['providing', 'provides']",2
+least,[],0
+light,[],0
+sea,[],0
+replaced,['replacing'],1
+studies,"['study', 'anthropology', 'comparative']",3
+we,"['you', 'ourselves', 'myself', 'maybe', 'honestly']",5
+study,['studies'],1
+shows,[],0
+politician,"['jurist', 'lawyer', 'diplomat', 'businessman']",4
+rather,['less'],1
+cup,"['champions', 'championship', 'qualifiers']",3
+songs,"['lyrics', 'instrumentals', 'song', 'albums', 'renditions', 'ballads', 'recordings']",7
+introduced,['reintroduced'],1
+academy,[],0
+media,[],0
+type,[],0
+low,[],0
+winning,"['won', 'winner', 'win']",3
+structures,['buildings'],1
+1980,"['1984', '1976', '1972', '1979', '1982', '1978', '1983', '1981', '1988', '1985']",10
+degree,"['bachelor', 'doctorate', 'degrees', 'laude', 'phd', 'ph']",6
+front,[],0
+active,[],0
+w,"['j', 'h', 'g']",3
+successful,[],0
+placed,[],0
+companies,[],0
+19th,"['18th', '20th', 'century', '17th', 'nineteenth', '16th', '21st', '15th', 'twentieth', 'eighteenth']",10
+indian,['nepalese'],1
+championship,"['champions', 'champion', 'championships', 'tournament', 'cup', 'team', 'finals', 'qualifiers']",8
+taking,"['took', 'take']",2
+owned,"['owns', 'purchased', 'bought']",3
+far,[],0
+star,['stars'],1
+plays,['playing'],1
+lower,['upper'],1
+republic,[],0
+initially,['subsequently'],1
+performance,[],0
+performed,['performs'],1
+change,"['changes', 'changing']",2
+stage,[],0
+writer,"['author', 'novelist', 'essayist', 'journalist', 'playwright', 'poet', 'screenwriter', 'humorist', 'memoirist', 'satirist']",10
+behind,[],0
+1983,"['1982', '1985', '1987', '1981', '1979', '1978', '1986', '1977', '1989', '1975']",10
+uk,[],0
+action,[],0
+parts,[],0
+ever,[],0
+decided,"['opted', 'chose', 'persuaded', 'refused', 'agreed', 'hoped', 'wanted', 'wished', 'tried', 'asked']",10
+come,['go'],1
+author,"['writer', 'essayist', 'novelist', 'memoirist', 'poet', 'bibliographer', 'humorist', 'journalist', 'historian']",9
+future,[],0
+tv,['television'],1
+magazine,[],0
+finished,"['finishing', 'finish']",2
+human,[],0
+below,['above'],1
+changed,[],0
+put,['putting'],1
+lived,['resided'],1
+start,[],0
+schools,['colleges'],1
+seasons,['season'],1
+brought,['came'],1
+represented,[],0
+gold,['silver'],1
+1982,"['1983', '1985', '1986', '1981', '1979', '1978', '1987', '1977', '1975', '1989']",10
+win,"['clinching', 'victory', 'beating', 'clinch', 'losing', 'won', 'winning', 'wins']",8
+artist,[],0
+my,"['your', 'dear', 'me']",3
+washington,[],0
+articles,[],0
+usually,"['typically', 'normally', 'sometimes', 'often', 'rarely', 'invariably', 'preferably', 'occasionally']",8
+museum,[],0
+capital,[],0
+senior,[],0
+teams,"['team', 'leagues', 'clubs']",3
+real,[],0
+contains,"['containing', 'contained', 'includes', 'comprises']",4
+sometimes,"['often', 'usually', 'occasionally', 'rarely', 'frequently', 'commonly', 'alternately', 'seldom']",8
+training,[],0
+big,[],0
+peter,"['michael', 'andrew', 'paul', 'john', 'stephen', 'david', 'nicholas', 'anthony', 'simon', 'christopher']",10
+process,['processes'],1
+via,[],0
+australian,[],0
+canadian,[],0
+too,"['quite', 'very', 'so']",3
+census,[],0
+native,[],0
+sent,"['dispatched', 'despatched']",2
+1979,"['1978', '1983', '1982', '1981', '1977', '1975', '1973', '1974', '1985', '1987']",10
+green,['blue'],1
+provide,"['providing', 'provides']",2
+committee,['committees'],1
+especially,['particularly'],1
+richard,"['robert', 'john', 'ralph', 'gerald', 'walter', 'william', 'hugh', 'thomas', 'james', 'david']",10
+natural,[],0
+v,[],0
+limited,[],0
+edition,[],0
+reported,[],0
+date,[],0
+competition,[],0
+whom,['who'],1
+itself,[],0
+success,['successes'],1
+cross,[],0
+collection,"['collections', 'catalogue']",2
+numerous,"['several', 'many', 'countless', 'various', 'dozens', 'plethora']",6
+reached,['reaching'],1
+interest,[],0
+earlier,['later'],1
+notable,['noteworthy'],1
+minister,['prime'],1
+1981,"['1978', '1983', '1985', '1982', '1977', '1979', '1987', '1986', '1975', '1989']",10
+studio,[],0
+professor,"['lecturer', 'emeritus', 'adjunct', 'professorship', 'phd', 'emerita', 'researcher', 'associate']",8
+possible,[],0
+complete,[],0
+primary,[],0
+artists,['musicians'],1
+historical,[],0
+japan,[],0
+section,['sections'],1
+past,[],0
+saw,[],0
+annual,['yearly'],1
+spent,[],0
+associated,[],0
+ground,[],0
+1972,"['1976', '1968', '1980', '1964', '1970', '1974', '1978', '1984', '1975', '1971']",10
+here,[],0
+character,"['protagonist', 'characters', 'villain']",3
+1976,"['1972', '1980', '1968', '1984', '1978', '1975', '1979', '1974', '1970', '1981']",10
+wide,[],0
+regional,[],0
+1978,"['1981', '1979', '1975', '1977', '1983', '1982', '1973', '1974', '1985', '1986']",10
+historic,[],0
+industry,['industries'],1
+grand,[],0
+election,['elections'],1
+additional,[],0
+news,['cnn'],1
+nine,"['seven', 'five', 'eight', 'eleven', 'six', 'fourteen', 'three', 'four', 'thirteen', 'twelve']",10
+students,"['undergraduates', 'teachers', 'pupils']",3
+ended,[],0
+significant,"['substantial', 'considerable']",2
+towards,['toward'],1
+strong,[],0
+leader,[],0
+21st,"['20th', '19th', '18th', '17th', 'century']",5
+singer,"['songwriter', 'musician', 'vocalist', 'entertainer', 'guitarist']",5
+organization,[],0
+average,[],0
+families,[],0
+studied,"['studying', 'taught', 'lectured', 'graduated']",4
+better,[],0
+subsequently,"['initially', 'thereafter', 'eventually', 'later']",4
+retired,[],0
+must,"['cannot', 'should', 'will', 'can', 'could', 'shall', 'might']",7
+1974,"['1970', '1975', '1978', '1971', '1979', '1973', '1969', '1977', '1983', '1981']",10
+becoming,"['became', 'become']",2
+health,['healthcare'],1
+running,[],0
+awards,"['award', 'nominations']",2
+location,[],0
+regular,[],0
+week,['month'],1
+generally,['often'],1
+1975,"['1973', '1978', '1971', '1977', '1979', '1974', '1970', '1981', '1969', '1982']",10
+met,[],0
+coast,['coasts'],1
+mark,"['matthew', 'david', 'michael']",3
+fire,['fires'],1
+battle,"['battles', 'skirmish']",2
+1970,"['1969', '1966', '1971', '1967', '1974', '1965', '1975', '1973', '1963', '1978']",10
+1977,"['1978', '1981', '1973', '1975', '1979', '1971', '1983', '1982', '1974', '1970']",10
+highest,['lowest'],1
+higher,[],0
+noted,"['cited', 'remarked']",2
+african,[],0
+culture,[],0
+henry,"['william', 'charles', 'edward', 'philip', 'frederick', 'edmund', 'hugh', 'richard', 'john', 'james']",10
+finally,"['eventually', 'whereupon', 'when', 'again', 'soon', 'then', 'afterwards', 'immediately', 'promptly', 'meantime']",10
+italian,[],0
+network,['networks'],1
+officer,[],0
+means,"['meaning', 'hence']",2
+technology,"['microelectronics', 'technologies', 'biotechnology', 'nanotechnology', 'technological']",5
+writing,[],0
+allowed,"['permitted', 'allowing', 'able', 'enabled']",4
+review,[],0
+famous,['famed'],1
+forces,"['troops', 'armies', 'force', 'army']",4
+k,['r'],1
+already,"['been', 'had', 'never']",3
+n,['p'],1
+serving,['served'],1
+1968,"['1972', '1964', '1976', '1970', '1966', '1969', '1967', '1971', '1965', '1980']",10
+1973,"['1975', '1971', '1977', '1978', '1969', '1979', '1974', '1970', '1981', '1967']",10
+entered,[],0
+countries,[],0
+mostly,"['mainly', 'predominantly', 'predominately', 'primarily', 'largely']",5
+opening,['closing'],1
+stated,"['said', 'stating', 'commented', 'asserted', 'explained', 'opined', 'remarked', 'told', 'saying', 'questioned']",10
+management,[],0
+rest,[],0
+space,[],0
+selected,[],0
+woman,[],0
+china,"['taiwan', 'guangdong', 'mongolia', 'zhejiang', 'fujian']",5
+los,['angeles'],1
+feature,[],0
+1971,"['1973', '1975', '1970', '1967', '1969', '1965', '1977', '1966', '1974', '1978']",10
+rural,[],0
+traditional,[],0
+foundation,[],0
+hand,[],0
+length,[],0
+entire,['whole'],1
+base,['bases'],1
+500,"['600', '400', '250', '300', '200', '700', '350', '800', '150', '000']",10
+size,[],0
+blue,"['red', 'yellow', 'green', 'purple']",4
+give,"['bring', 'giving', 'make']",3
+commercial,[],0
+points,[],0
+starting,[],0
+killed,"['wounded', 'ambushed', 'mortally', 'rescued', 'murdered', 'perished', 'killing']",7
+conference,[],0
+1969,"['1970', '1967', '1971', '1965', '1966', '1975', '1973', '1974', '1963', '1977']",10
+olympic,['paralympic'],1
+view,[],0
+me,"['you', 'gotta', 'somebody', 'myself', 'gonna', 'wanna', 'everybody', 'yeah', 'yourself', 'my']",10
+going,['go'],1
+movement,['movements'],1
+find,"['discover', 'locate']",2
+minimum degree,0
 maximum degree,10
-Avarage degree,10.0
+Avarage degree,2.637777777777778
